@@ -1,0 +1,281 @@
+{
+  "main": {
+    "id": "06960c341830fddc",
+    "type": "split",
+    "children": [
+      {
+        "id": "78227edff27db553",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4b5f4b4a6fcdd138",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "07. 프로젝트 데이터베이스/02. 현장별 프로젝트/01. 아산배방우방아이유쉘/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7d607cab14cabd67",
+    "type": "split",
+    "children": [
+      {
+        "id": "92684c0ba4f9960e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0308d2192de3c0a1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "721e100eae89d62e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "4b9ab0dc51403157",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          },
+          {
+            "id": "3de557d651032a9e",
+            "type": "leaf",
+            "state": {
+              "type": "file-tree-view",
+              "state": {},
+              "icon": "sheets-in-box",
+              "title": "File Tree"
+            }
+          },
+          {
+            "id": "80c91d156a8e6c36",
+            "type": "leaf",
+            "state": {
+              "type": "notebook-navigator",
+              "state": {},
+              "icon": "notebook",
+              "title": "Notebook Navigator"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 438.5
+  },
+  "right": {
+    "id": "5d6e3a79f0e0c56f",
+    "type": "split",
+    "children": [
+      {
+        "id": "963f30d848124311",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "faacba872e049041",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "QUICK_START.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "QUICK_START 의 백링크"
+            }
+          },
+          {
+            "id": "70b4bfe278e83ad0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "QUICK_START.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "QUICK_START 의 나가는 링크"
+            }
+          },
+          {
+            "id": "09f6cf829d6945a3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "bfd303b93fb4db93",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "모든 속성"
+            }
+          },
+          {
+            "id": "d381fba10deb6d65",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "QUICK_START.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "QUICK_START 의 개요"
+            }
+          },
+          {
+            "id": "5665d3dc5fb31dc0",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "07_프로젝트_데이터베이스/현장별_프로젝트/아산배방우방아이유쉘/광고_캠페인/09_카카오톡_채널_마케팅_전략.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "Footnotes"
+            }
+          },
+          {
+            "id": "0a9a65543caa9708",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-kanban:새 보드 만들기": false,
+      "omnisearch:Omnisearch": false,
+      "copilot:Open Copilot Chat": false,
+      "smart-composer:Open smart composer": false,
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false,
+      "markdown-importer:마크다운 형식 불러오기 열기": false,
+      "audio-recorder:녹음 시작/정지": false,
+      "workspaces:작업 공간 레이아웃 관리": false,
+      "file-tree-alternative:File Tree Alternative Plugin": false,
+      "notebook-navigator:Notebook Navigator": false
+    }
+  },
+  "active": "0308d2192de3c0a1",
+  "lastOpenFiles": [
+    "09. 레퍼런스/03. 마케팅/02. 네이버/01. 검색광고/네이버_파워링크_확장소재_노출제한_해결방법.md",
+    "07. 프로젝트 데이터베이스/02. 현장별 프로젝트/01. 아산배방우방아이유쉘/02. 랜딩페이지/06_신혼부부_페이지.md",
+    "07. 프로젝트 데이터베이스/02. 현장별 프로젝트/01. 아산배방우방아이유쉘/02. 랜딩페이지/05_가격_평면도.md",
+    "07. 프로젝트 데이터베이스/02. 현장별 프로젝트/01. 아산배방우방아이유쉘/02. 랜딩페이지/04_입지정보.md",
+    "07. 프로젝트 데이터베이스/02. 현장별 프로젝트/01. 아산배방우방아이유쉘/02. 랜딩페이지/03_특화시설.md",
+    "07. 프로젝트 데이터베이스/02. 현장별 프로젝트/01. 아산배방우방아이유쉘/02. 랜딩페이지/00_노션_페이지_목록.md",
+    "image copy.png",
+    "image.png",
+    "07. 프로젝트 데이터베이스/02. 현장별 프로젝트/01. 아산배방우방아이유쉘/01. 광고 캠페인/12_키워드_단가별_확장소재_전략.md",
+    "03. 광고 캠페인/02. 네이버/네이버_검색광고_공략법.md",
+    "09_레퍼런스/마케팅/네이버/검색광고/네이버_파워링크_확장소재_노출제한_해결방법.md",
+    "09_레퍼런스/마케팅/네이버/검색광고",
+    "09_레퍼런스/마케팅/네이버",
+    "09_레퍼런스/마케팅",
+    "09_레퍼런스",
+    "네이버 파워링크 확장소재노출.html",
+    "03. 광고 캠페인/05. 카카오 비즈니스/01_카카오_비즈니스_기초_가이드.md",
+    "03. 광고 캠페인/04. 메타 광고/01_메타_광고_기초_가이드.md",
+    "03. 광고 캠페인/04. 메타 광고/06_부동산_메타_광고_특별_전략.md",
+    "templates/프로젝트_현장_템플릿.md",
+    "03. 광고 캠페인/06. 구글/구글광고_성과측정_및_최적화.md",
+    "03. 광고 캠페인/06. 구글/유튜브_광고_활용법.md",
+    "03. 광고 캠페인/06. 구글/구글_디스플레이(GDN)_네트워크_가이드.md",
+    "03. 광고 캠페인/06. 구글/구글_검색광고_전략.md",
+    "03. 광고 캠페인/06. 구글/구글_광고_생태계_이해하기.md",
+    "03. 광고 캠페인/06. 구글",
+    "03. 광고 캠페인/03. 당근마켓/당근_피드광고_전략.md",
+    "03. 광고 캠페인/03. 당근마켓/당근_비즈프로필_활용법.md",
+    "03. 광고 캠페인/03. 당근마켓/당근마켓_광고_시작하기.md",
+    "03. 광고 캠페인/02. 네이버/블로그_카페_콘텐츠_마케팅.md",
+    "03. 광고 캠페인/02. 네이버/네이버_성과형_디스플레이_광고(GFA)_가이드.md",
+    "03. 광고 캠페인/02. 네이버/네이버_광고_생태계_이해하기.md",
+    "03. 광고 캠페인/05. 카카오 비즈니스/광고_소재_제작_팁.md",
+    "03. 광고 캠페인/05. 카카오 비즈니스/부동산_업종_타겟팅_전략.md",
+    "05. 퍼스널 브랜딩",
+    "00. 프레임워크 코어",
+    "03. 광고 캠페인/04. 메타 광고/01. 레퍼런스",
+    "03. 광고 캠페인/05. 카카오 비즈니스/01. 레퍼런스"
+  ]
+}

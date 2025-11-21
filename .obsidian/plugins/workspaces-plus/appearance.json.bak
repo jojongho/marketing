@@ -1,0 +1,16 @@
+{
+  "cssTheme": "Shiba Inu",
+  "accentColor": "",
+  "theme": "obsidian",
+  "nativeMenus": false,
+  "enabledCssSnippets": [
+    "supercharged-links-gen",
+    "extended-colorschemes"
+  ],
+  "showRibbon": true,
+  "baseFontSize": 16,
+  "interfaceFontFamily": "SUITE",
+  "textFontFamily": "Pretendard Variable",
+  "monospaceFontFamily": "Fira Code Retina",
+  "baseFontSizeAction": true
+}

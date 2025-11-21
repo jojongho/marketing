@@ -1,0 +1,57 @@
+{
+  "showInstructions": true,
+  "showDeletePrompt": true,
+  "saveOnSwitch": false,
+  "saveOnChange": false,
+  "workspaceSettings": false,
+  "systemDarkMode": false,
+  "globalSettings": {
+    "theme": "moonstone",
+    "cssTheme": "Prism",
+    "accentColor": "",
+    "baseFontSizeAction": true,
+    "interfaceFontFamily": "SUITE",
+    "textFontFamily": "Pretendard",
+    "nativeMenus": false,
+    "monospaceFontFamily": "Fira Code Retina",
+    "enabledCssSnippets": [
+      "supercharged-links-gen",
+      "extended-colorschemes"
+    ],
+    "baseFontSize": 16,
+    "showRibbon": true,
+    "showLineNumber": true,
+    "spellcheck": false,
+    "strictLineBreaks": true,
+    "vimMode": false,
+    "alwaysUpdateLinks": true,
+    "newFileLocation": "folder",
+    "newFileFolderPath": "00. Inbox/03. Drafts",
+    "attachmentFolderPath": "-SYSTEM/03. Attachments",
+    "readableLineLength": false,
+    "pdfExportSettings": {
+      "pageSize": "Letter",
+      "landscape": false,
+      "margin": "0",
+      "downscalePercent": 100
+    },
+    "promptDelete": false,
+    "uriCallbacks": true,
+    "tabSize": 3,
+    "showUnsupportedFiles": true,
+    "userIgnoreFilters": [
+      "node_modules/",
+      "servers/",
+      "SuperGemini_Framework/",
+      "Tags/",
+      "notion-mcp-server/"
+    ],
+    "excludedFiles": "node_modules/**, .vscode/**, .git/**, package-lock.json, .gitignore"
+  },
+  "activeWorkspaceDesktop": "Project",
+  "activeWorkspaceMobile": "",
+  "reloadLivePreview": true,
+  "workspaceSwitcherRibbon": true,
+  "modeSwitcherRibbon": true,
+  "replaceNativeRibbon": true
+}

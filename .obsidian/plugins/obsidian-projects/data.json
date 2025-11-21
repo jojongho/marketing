@@ -1,0 +1,205 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [
+        "-SYSTEM/02. Templates/05. Project Management/Project_Hub_Template.md"
+      ],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "tag",
+        "config": {
+          "tag": "#task",
+          "hierarchy": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "name": {
+                "width": 360
+              },
+              "path": {
+                "hide": true
+              }
+            }
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "name": "Table",
+          "id": "f284a28f-a1ca-4c9f-8469-58ef7a309bea",
+          "type": "table"
+        },
+        {
+          "config": {
+            "groupByField": "status",
+            "orderSyncField": "weight"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "name": "Board",
+          "id": "e1e63858-338a-4b41-9222-c7f43270c0c1",
+          "type": "board"
+        },
+        {
+          "config": {
+            "interval": "day",
+            "dateField": "due",
+            "checkField": "published"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "name": "Calendar",
+          "id": "c13b8900-3603-4614-8fbc-0552e7d0e3ad",
+          "type": "calendar"
+        },
+        {
+          "config": {
+            "coverField": "image"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": [
+              {
+                "color": "#d39797",
+                "condition": {
+                  "field": "name",
+                  "operator": "is-not-empty",
+                  "enabled": true
+                }
+              }
+            ]
+          },
+          "sort": {
+            "criteria": []
+          },
+          "name": "Gallery",
+          "id": "99970ff4-4492-4645-968e-dc8428e31d4e",
+          "type": "gallery"
+        }
+      ],
+      "name": "project",
+      "id": "765b2895-37f9-418c-b674-eb15494045d5",
+      "path": "Projects - Demo Project"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "10. Flow System/11. Framing",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "aliases": {
+                "width": 190
+              },
+              "name": {
+                "width": 169
+              },
+              "path": {
+                "width": 190
+              },
+              "title": {
+                "hide": true
+              }
+            }
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "2b9d7cee-2297-4c37-b40e-a2b0f18348c7",
+          "name": "Table",
+          "type": "table"
+        },
+        {
+          "config": {},
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "0c5cb9a7-f468-4bba-8033-b2899d944d83",
+          "name": "Framing board",
+          "type": "board"
+        }
+      ],
+      "id": "b6cf14e0-70fd-4df9-afe7-1ef9627a7150",
+      "name": "Framing"
+    }
+  ],
+  "archives": [],
+  "preferences": {
+    "projectSizeLimit": 1000,
+    "frontmatter": {
+      "quoteStrings": "PLAIN"
+    },
+    "locale": {
+      "firstDayOfWeek": "monday"
+    },
+    "commands": [
+      {
+        "project": "765b2895-37f9-418c-b674-eb15494045d5",
+        "view": "c13b8900-3603-4614-8fbc-0552e7d0e3ad"
+      },
+      {
+        "project": "b6cf14e0-70fd-4df9-afe7-1ef9627a7150",
+        "view": "0c5cb9a7-f468-4bba-8033-b2899d944d83"
+      }
+    ],
+    "linkBehavior": "open-editor"
+  }
+}

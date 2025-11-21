@@ -1,0 +1,20 @@
+{
+  "uriCallbacks": true,
+  "promptDelete": false,
+  "showLineNumber": true,
+  "spellcheck": false,
+  "alwaysUpdateLinks": true,
+  "readableLineLength": true,
+  "strictLineBreaks": false,
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "tabSize": 3,
+  "attachmentFolderPath": "-SYSTEM/03. Attachments",
+  "showUnsupportedFiles": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00. Inbox/03. Drafts"
+}

@@ -1,0 +1,141 @@
+{
+  "userAdmonitions": {
+    "book": {
+      "type": "book",
+      "color": "230, 199, 0",
+      "icon": {
+        "name": "book-open",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "책",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "prompt": {
+      "type": "prompt",
+      "color": "58, 146, 140",
+      "icon": {
+        "name": "language",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "프롬프트",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "Picture": {
+      "type": "Picture",
+      "color": "255, 56, 56",
+      "icon": {
+        "name": "lucide-picture-in-picture-2",
+        "type": "obsidian"
+      },
+      "command": false,
+      "title": "사진",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "table": {
+      "type": "table",
+      "color": "89, 89, 89",
+      "icon": {
+        "name": "lucide-table-properties",
+        "type": "obsidian"
+      },
+      "command": false,
+      "title": "표",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "AI": {
+      "type": "AI",
+      "color": "41, 112, 68",
+      "icon": {
+        "name": "brain",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "AI 요약",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "Script": {
+      "type": "Script",
+      "color": "0, 0, 0",
+      "icon": {
+        "name": "align-left",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Script",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "description": {
+      "type": "description",
+      "color": "255, 142, 66",
+      "icon": {
+        "name": "angle-double-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "세부정보",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "특약": {
+      "type": "특약",
+      "color": "0, 189, 57",
+      "icon": {
+        "name": "book-reader",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "특약의필요성",
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "TalkTalk": {
+      "type": "TalkTalk",
+      "color": "62, 160, 208",
+      "icon": {
+        "name": "asterisk",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Talk Talk",
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    }
+  },
+  "syntaxHighlight": false,
+  "copyButton": true,
+  "version": "10.3.2",
+  "autoCollapse": true,
+  "defaultCollapseType": "open",
+  "injectColor": true,
+  "parseTitles": true,
+  "dropShadow": true,
+  "hideEmpty": false,
+  "open": {
+    "admonitions": true,
+    "icons": true,
+    "other": true,
+    "advanced": false
+  },
+  "icons": [],
+  "useFontAwesome": true,
+  "rpgDownloadedOnce": false,
+  "msDocConverted": true,
+  "useSnippet": false,
+  "snippetPath": "custom-admonitions.75734b"
+}
