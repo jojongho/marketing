@@ -1,4 +1,6 @@
 {
   "cssTheme": "Prism",
-  "theme": "moonstone"
+  "theme": "moonstone",
+  "interfaceFontFamily": "Pretendard Variable",
+  "textFontFamily": "Pretendard Variable"
 }
