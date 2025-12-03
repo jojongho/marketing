@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* 팝업 스타일 시작 */
+        #custom-popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            /* 배경 어둡게 */
+            z-index: 9999;
+            /* 최상위 노출 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #custom-popup-container {
+            position: relative;
+            max-width: 1200px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .popup-close-btn {
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            margin-bottom: 12px;
+            display: inline-block;
+            font-family: sans-serif;
+            text-decoration: underline;
+        }
+
+        .popup-content {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            /* 이미지 사이 간격 */
+        }
+
+        .popup-item {
+            flex: 1;
+            max-width: 33%;
+            /* 3등분 */
+            transition: transform 0.3s ease;
+        }
+
+        .popup-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            /* 모서리 둥글게 (선택사항) */
+        }
+
+        /* 첫번째 이미지 호버 효과 */
+        .popup-item.link-item:hover {
+            transform: scale(1.02);
+            /* 살짝 커지는 효과 */
+            cursor: pointer;
+        }
+
+        /* 모바일 반응형: 세로로 쌓기 */
+        @media (max-width: 768px) {
+            .popup-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .popup-item {
+                max-width: 80%;
+                margin-bottom: 10px;
+            }
+
+            #custom-popup-container {
+                height: 90%;
+                overflow-y: auto;
+                /* 모바일에서 스크롤 가능하게 */
+            }
+        }
+
+        /* 팝업 스타일 끝 */
+    </style>
+</head>
+
+<body>
+
+    <!-- 팝업 코드 시작 (이 부분을 복사해서 사용하세요) -->
+    <div id="custom-popup-overlay">
+        <div id="custom-popup-container">
+            <!-- 닫기 버튼 -->
+            <div class="popup-close-btn" onclick="closePopup()">팝업닫기 X</div>
+
+            <!-- 이미지 영역 -->
+            <div class="popup-content">
+                <!-- 첫번째 이미지: 클릭/호버 시 이동 -->
+                <!-- 링크 주소(href)를 실제 고객등록 폼 주소로 변경하세요 -->
+                <a href="#customer-form" class="popup-item link-item" id="popup-link-1">
+                    <!-- 이미지 주소(src)를 실제 이미지 URL로 변경하세요 -->
+                    <img src="https://muxmu.notion.site/image/attachment%3A3f1a24ef-d9c3-4d66-8657-d9a2409c794b%3A1.png?table=block&id=2ba3bf54-7d53-8052-aaba-f315772c569f&spaceId=6bb8b113-b79a-466f-bc34-e51dd003d60d&width=1420&userId=&cache=v2"
+                        alt="관심고객 등록 안내">
+                </a>
+
+                <!-- 두번째 이미지: 단순 이미지 -->
+                <div class="popup-item">
+                    <img src="https://muxmu.notion.site/image/attachment%3Adc8481ff-2d48-4464-9a9f-5fa5fa33b1fe%3A2.png?table=block&id=2ba3bf54-7d53-807e-a1ac-f4452f457908&spaceId=6bb8b113-b79a-466f-bc34-e51dd003d60d&width=1420&userId=&cache=v2"
+                        alt="안내 이미지 1">
+                </div>
+
+                <!-- 세번째 이미지: 단순 이미지 -->
+                <div class="popup-item">
+                    <img src="https://muxmu.notion.site/image/attachment%3Ab656392b-9e4c-488d-8cbd-5b566d3560f1%3A3.png?table=block&id=2ba3bf54-7d53-80f0-b1f5-da41f564d35a&spaceId=6bb8b113-b79a-466f-bc34-e51dd003d60d&width=1420&userId=&cache=v2"
+                        alt="안내 이미지 2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 팝업 닫기 함수
+        function closePopup() {
+            document.getElementById('custom-popup-overlay').style.display = 'none';
+        }
+
+        // 첫번째 이미지 호버 시 이동 기능 (요청하신 기능)
+        // 주의: 호버만으로 페이지가 이동되면 사용자 경험(UX)에 좋지 않을 수 있습니다.
+        // 클릭 시 이동하는 것이 일반적이나, 요청대로 호버 시 이동하게 하려면 아래 주석을 해제하세요.
+
+        /*
+        const linkItem = document.getElementById('popup-link-1');
+        linkItem.addEventListener('mouseenter', function() {
+            // 이동할 주소를 입력하세요
+            window.location.href = '#customer-form'; 
+        });
+        */
+    </script>
+    <!-- 팝업 코드 끝 -->
+
+</body>
+
+</html>

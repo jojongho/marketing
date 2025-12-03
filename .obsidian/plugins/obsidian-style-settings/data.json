@@ -1,4 +1,8 @@
 {
+  "things-style@@active-line": true,
+  "things-style@@fancy-code": true,
+  "things-style@@fancy-highlight": true,
+  "things-style@@no-kanban-styles": false,
   "anuppuccin-theme-settings-extended@@anp-theme-ext-dark": true,
   "anuppuccin-theme-settings-extended@@anp-theme-ext-amoled": false,
   "anuppuccin-theme-settings-extended@@anp-theme-ext-light": true,
@@ -99,9 +103,6 @@
   "minimal-advanced@@cursor": "default",
   "Blue-Topaz-Codebox-Highlight@@code-theme-selection": "code-theme-dracula",
   "things-style@@mobile-black-background": true,
-  "things-style@@active-line": true,
-  "things-style@@fancy-code": true,
-  "things-style@@fancy-highlight": true,
   "blue-topaz-theme@@color-scheme-options": "color-scheme-options-topaz-nord",
   "anuppuccin-theme-settings-extended@@catppuccin-theme-extended": "ctp-notion-light",
   "minimal-style@@blockquote-border-thickness": 3,

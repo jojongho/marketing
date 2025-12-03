@@ -45,6 +45,9 @@
     "TQ_show_task_count": "checkbox",
     "TQ_show_tree": "checkbox",
     "TQ_show_urgency": "checkbox",
-    "date_start": "date"
+    "date_start": "date",
+    "category": "multitext",
+    "type": "multitext",
+    "date_added": "date"
   }
 }

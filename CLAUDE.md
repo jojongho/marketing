@@ -13,7 +13,43 @@ This is a **real estate marketing framework** for managing multi-channel adverti
 - **Landing Pages:** Figma → Figma Site, Notion Bullet Builder
 - **Advertising Platforms:** Naver PowerLink (primary), Kakao, Meta, Danggeun (당근마켓)
 - **Analytics:** GA4, Naver Analytics
-- **File Management:** CSV exports for bulk keyword uploads
+- **Automation:** Python scripts for keyword generation and CSV processing
+- **File Management:** CSV exports for bulk keyword uploads to Naver PowerLink
+
+## Python Development Environment
+
+**Key Python Scripts Location:** `03. 광고 캠페인/02. 네이버/03. 도구 개발/`
+
+**Core Tools:**
+
+- `generate_draft.py` - Generates keyword combinations using itertools (regions × types × suffixes)
+- `create_combiner_tool.py` - Creates Excel-based keyword combiner with formulas
+- `populate_db.py` - Populates Smart_Keyword_DB.xlsx from source Excel files
+- `create_db_template.py` - Creates template database structure
+- `analyze_excels.py` - Analyzes existing Excel files for data extraction
+- `inspect_source_files.py` - Inspects source Excel structure
+
+**Running Python Tools:**
+
+```bash
+# Navigate to tools directory
+cd "03. 광고 캠페인/02. 네이버/03. 도구 개발"
+
+# Generate keyword draft CSV
+python generate_draft.py
+
+# Create Excel keyword combiner tool
+python create_combiner_tool.py
+
+# Populate database from source files
+python populate_db.py
+```
+
+**Dependencies:**
+
+- pandas
+- openpyxl (for Excel file manipulation)
+- itertools (standard library, for Cartesian product keyword combinations)
 
 ## Repository Structure
 
@@ -166,16 +202,65 @@ Templates use `{변수명}` for easy replacement:
 When creating keyword CSV files for Naver PowerLink:
 
 **Required columns:**
+
 ```csv
 광고그룹ID,키워드,입찰가,매칭옵션,사용여부
 ```
 
 **Format rules:**
+
 - Leave 광고그룹ID empty for bulk upload
 - 입찰가: Integer (70-200 typical range)
 - 매칭옵션: 확대 (broad match)
 - 사용여부: Y or N
 - UTF-8 encoding with BOM for Korean characters
+- Maximum 10,000 rows per file (1,000 keywords per ad group limit)
+
+**Naver Template Files:** Located in `templates/` directory
+
+- `ko_add_keyword_template(키워드 등록 템플릿).csv` - Keyword registration template
+- `ko_keyword_estimate_template(키워드 견적 템플릿).csv` - Keyword estimation template
+- `ko_add_ad_template(단일형 소재등록 템플릿).csv` - Single ad creative template
+- `ko_add_rsa_ad_template(반응형 소재등록 템플릿).csv` - Responsive ad creative template
+
+## Keyword Generation Architecture
+
+**Cartesian Product Approach:**
+
+The `generate_draft.py` script uses Python's `itertools.product()` to create keyword combinations:
+
+```python
+# Example from generate_draft.py
+regions = ["아산", "배방", "천안", "탕정", "불당"]
+types = ["아파트", "오피스텔", "분양", "전세", "월세"]
+suffixes = ["정보", "시세", "전망", "순위", "추천"]
+
+# Combination 1: regions × types
+keywords1 = [f"{r} {t}" for r, t in itertools.product(regions, types)]
+
+# Combination 2: regions × types × suffixes
+keywords2 = [f"{r} {t} {s}" for r, t, s in itertools.product(regions, types, suffixes)]
+```
+
+**Excel Formula Approach:**
+
+The `create_combiner_tool.py` creates an Excel file with dynamic formulas that auto-generate keywords as users input data in columns A, B, C:
+
+- Column A: 지역 (regions)
+- Column B: 업종/유형 (types)
+- Column C: 세부/관심사 (suffixes)
+- Column E: Auto-generated 1차 조합 (A + B)
+- Column F: Auto-generated 2차 조합 (E + C)
+
+**Smart Keyword Database:**
+
+Excel-based database structure (`Smart_Keyword_DB.xlsx`):
+
+- `Basic_Info` sheet: Region hierarchy (L1, L2)
+- `Real_Estate` sheet: Property types, targets, attributes
+- `Life_Interest` sheet: Location details, brand names, categories
+- `Project_Specific` sheet: Project-specific keywords
+- `Rules` sheet: Combination rules and logic
 
 ## Working with This Codebase
 
@@ -211,24 +296,83 @@ When creating keyword CSV files for Naver PowerLink:
 ## Common Tasks
 
 ### Generate Keyword List for New Project
-1. Research competitor keywords in `09. 레퍼런스/03. 마케팅/네이버/`
-2. Use Tier 1-5 classification system
-3. Create CSV with 500-1,200 keywords
-4. Name: `TEST_파워링크_키워드_[N]개_업로드용.csv`
+
+#### Option 1: Using Python Script
+
+```bash
+cd "03. 광고 캠페인/02. 네이버/03. 도구 개발"
+python generate_draft.py
+# Output: keyword_draft_v1.csv with auto-generated combinations
+```
+
+#### Option 2: Using Excel Combiner Tool
+
+```bash
+cd "03. 광고 캠페인/02. 네이버/03. 도구 개발"
+python create_combiner_tool.py
+# Output: Keyword_Combiner_Tool.xlsx
+# Then manually input regions, types, suffixes in columns A, B, C
+```
+
+#### Post-generation
+
+1. Review generated keywords for relevance
+2. Apply Tier 1-5 classification (based on search intent)
+3. Set appropriate bid prices (입찰가: 70-200 KRW)
+4. Export as CSV with proper UTF-8-BOM encoding
+5. Name: `TEST_파워링크_키워드_[N]개_업로드용.csv`
 
 ### Create Landing Page Structure
+
 1. Start with `00_사이트구조_설계서.md` (11-page sitemap)
 2. Create Phase 1 essential pages first (메인, 혜택, 상담)
 3. Each page as separate MD with full content
 4. Ready for Notion agent implementation
 
 ### Set Up New Project
+
 1. Use `templates/프로젝트_현장_템플릿.md`
-2. Create folder: `07. 프로젝트 데이터베이스/02. 현장별 프로젝트/01. [현장명]/`
-3. Complete SWOT analysis
-4. Define 3 target personas
-5. Identify 8 key differentiators
-6. Follow `QUICK_START.md` workflow
+2. Create folder: `07. 프로젝트 데이터베이스/02. 현장별 프로젝트/[NN]. [현장명]/`
+3. Create subfolders:
+   - `00. 레퍼런스/` - Research and competitor analysis
+   - `01. 광고 캠페인/` - Campaign files and keywords
+   - `02. 랜딩페이지/` - Landing page content
+   - `03. 브랜드 전략/` - Brand messaging
+   - `04. 콘텐츠/` - Media assets
+   - `05. 성과 데이터/` - Analytics and performance data
+4. Complete SWOT analysis in README.md
+5. Define 3 target personas
+6. Identify 8 key differentiators
+7. Follow `QUICK_START.md` workflow
+
+### Working with Excel Data Sources
+
+**Source Excel Files Location:** `03. 광고 캠페인/02. 네이버/05. 엑셀/`
+
+Key files:
+
+- `부동산 마케팅 키워드.xlsx` - Real estate marketing keyword library
+- `아산 배방 우방아이유쉘 키워드.xlsx` - Project-specific keywords
+- `키워드추출_cso9858_naver.xlsx` - Extracted keywords from Naver account
+
+**Inspecting Excel files:**
+
+```bash
+cd "03. 광고 캠페인/02. 네이버/03. 도구 개발"
+python inspect_source_files.py  # Analyze Excel structure
+python analyze_excels.py        # Extract data patterns
+```
+
+### Converting CSV Encoding for Naver Upload
+
+When exporting CSV for Naver PowerLink, ensure UTF-8 with BOM encoding:
+
+```python
+# In pandas
+df.to_csv('output.csv', index=False, encoding='utf-8-sig')
+```
+
+The `-sig` parameter adds the BOM marker required for Korean characters in Naver's system.
 
 ## Reference Documents
 
